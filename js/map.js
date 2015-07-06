@@ -105,7 +105,7 @@ function customBuild(map) {
 }
 
 
-function onLocationFound(e) {
+function onLocationFound(e, map) {
     var radius = e.accuracy / 2;
 
 	L.marker(e.latlng).addTo(map).bindPopup("You are within " + radius + " meters from this point").openPopup();
