@@ -1,1 +1,8 @@
-/* You'll probably want to add some styles here */
+body {
+	padding:0;
+	margin:0;
+}
+
+html, body, #map {
+	height:100%;
+}
