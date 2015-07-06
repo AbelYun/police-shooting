@@ -63,7 +63,7 @@ L.marker([47.5349037, -122.3618534], {icon:policeDepartment}).addTo(map).bindPop
  green.addTo(map)
  L.control.layers(baseMaps).addTo(map);
 
-map.on('locationfound', onLocationFound);
+map.on('locationfound', onLocationFound, map);
 map.on('locationerror', onLocationError);
 
 map.locate({setView: true, maxZoom: 16});
